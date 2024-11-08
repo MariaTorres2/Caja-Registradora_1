@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja</title>
+    <link href="./css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <section class="contenedorCaja">
+        <div class="contenedorIzq">
+           <div class="titulos"><strong>Productos</strong></div>
+           <select id="selector">
+            <option id="seleccion" value="Seleccione un producto" data-precio="0">-- Elige un producto --</option>
+            <option id="huevos" value="Panal de huevos" data-precio="15000">Panal de huevos - $15.000</option>
+            <option id="arroz" value="Arroz" data-precio="5000">Arroz - $5.000</option>
+            <option id="salsa" value="Salsa Fruco" data-precio="18000">Salsa Fruco - $18.000</option>
+            <option id="antipasto" value="Antipasto" data-precio="23000">Antipasto - $23.000</option>
+        </select>
+        </div>
+
+        <div id="contenedorDer">
+            <div id="compra" class="titulos">Compra</div>
+            <div class="contenido">
+                <div id="contener">
+                    <div class="titulos">Producto</div>
+                    <input type="text" class="mostrar" id="mostrarproducto" >
+                </div>
+
+                <div id="contener">
+                    <div class="titulos">Cantidad</div>
+                    <input class="mostrar" id="cantidad" type="text">
+                </div>
+
+            <input type="text"  id="precio">
+
+            <div id="contenerBotones">
+            <button class="boton" id="compras" value="comprar">Comprar</button>
+            <button class="boton" id="derechoboton" value="Borrar">Borrar</button>
+            </div>
+            <div class="contenedorAuditor">
+                <div id="textoFinal"></div>
+                <div id="total" class="titulos">Total</div>
+        </div>
+            </div>
+           
+        
+    </section>
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
